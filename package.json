@@ -1,0 +1,21 @@
+{
+    "name": "proffy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "private": true,
+    "repository": "https://github.com/HerculesMaranhao/nextLevelWeek2",
+    "author": "herculesmaranhao <herculeslima.maranhao@gmail.com>",
+    "license": "MIT",
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "start:web": "yarn workspace @proffy/web start",
+        "start:server": "yarn workspace @proffy/server start",
+        "server:migrate": "yarn workspace @proffy/server knex:migrate",
+        "server:migrate:rollback": "yarn workspace @proffy/server knex:migrate:rollback"
+    },
+    "dependencies": {
+        "axios": "^0.19.2"
+    }
+}
