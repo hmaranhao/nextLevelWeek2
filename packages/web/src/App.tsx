@@ -1,9 +1,13 @@
 import React from 'react';
-import Routes from './routes';
+import AppRoutes from './routes/app.routes';
+import UnLoggedRoutes from './routes/unlogged.routes';
 
 function App() {
+
+  return <UnLoggedRoutes />
+  
   return (
-    <Routes />
+    <AppRoutes />
   );
 }
 
