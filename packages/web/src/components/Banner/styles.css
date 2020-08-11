@@ -1,0 +1,37 @@
+.banner {
+  background-color: var(--color-primary);
+  background-image: url(./../../assets/images/form-login-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90% 90%;
+  color: var(--color-title-in-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  margin-bottom: 3.2rem;
+  text-align: left;
+}
+
+.logo-container img {
+  height: 9rem;
+}
+
+.logo-container h2 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  margin-top: 0.8rem;
+  width: 24rem;
+}
+
+@media (min-width: 700px) {
+  .banner {
+      width: 55%;
+      height: 100%;
+  }
+}
